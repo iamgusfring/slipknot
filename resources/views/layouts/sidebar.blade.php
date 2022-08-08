@@ -39,6 +39,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ asset('/dashboardtwitter') }}" class="nav-link">
+                        <i class="nav-icon fab fa-twitter"></i>
+                        <p>
+                            Twitter
+                        </p>
+                    </a>
+                </li>
             
             </ul>
         </nav>
