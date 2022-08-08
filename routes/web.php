@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SocialNetwork\FacebookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,16 @@ Auth::routes([
     'verify' => false, // Email Verification Routes...
 ]);
 
+
+/**
+ * Web
+ */
+Route::get('/facebook', [FacebookController::class, 'index'])->name('facebook');
+Route::post('/facebook', [FacebookController::class, 'store']);
+
+
+
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+
+Route::get('/dashboardfacebook', [FacebookController::class, 'dashboardFacebook'])->name('dashboardFacebook');

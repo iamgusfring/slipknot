@@ -44,7 +44,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1>Dashboard</h1>
+                                <h1></h1>
                             </div>
                             <div class="col-sm-6">
                             </div>
@@ -87,8 +87,6 @@
     <script src="{{ asset('js/admin/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- AdminLTE App -->
     <script src="{{ asset('js/admin/adminlte.min.js') }}"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="{{ asset('js/admin/demo.js') }}"></script>
 
 
 </body>
