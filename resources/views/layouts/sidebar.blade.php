@@ -31,6 +31,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ asset('/dashboardinstagram') }}" class="nav-link">
+                        <i class="nav-icon fab fa-instagram"></i>
+                        <p>
+                            Instagram
+                        </p>
+                    </a>
+                </li>
             
             </ul>
         </nav>
