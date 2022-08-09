@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SocialNetwork\FacebookController;
 use App\Http\Controllers\SocialNetwork\InstagramController;
 use App\Http\Controllers\SocialNetwork\TwitterController;
+use App\Http\Controllers\SocialNetwork\LinkedinController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +45,9 @@ Route::post('/instagram', [InstagramController::class, 'store']);
 Route::get('/twitter', [TwitterController::class, 'index'])->name('twitter');
 Route::post('/twitter', [TwitterController::class, 'store']);
 
+Route::get('/linkedin', [LinkedinController::class, 'index'])->name('linkedin');
+Route::post('/linkedin', [LinkedinController::class, 'store']);
+
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
@@ -51,3 +55,4 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboardfacebook', [FacebookController::class, 'dashboardFacebook'])->name('dashboardFacebook');
 Route::get('/dashboardinstagram', [InstagramController::class, 'dashboardInstagram'])->name('dashboardInstagram');
 Route::get('/dashboardtwitter', [TwitterController::class, 'dashboardTwitter'])->name('dashboardtwitter');
+Route::get('/dashboardlinkedin', [LinkedinController::class, 'dashboardLinkedin'])->name('dashboardlinkedin');

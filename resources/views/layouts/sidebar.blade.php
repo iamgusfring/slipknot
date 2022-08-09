@@ -47,6 +47,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ asset('/dashboardlinkedin') }}" class="nav-link">
+                        <i class="nav-icon fab fa-linkedin"></i>
+                        <p>
+                            Linkedin
+                        </p>
+                    </a>
+                </li>
             
             </ul>
         </nav>
