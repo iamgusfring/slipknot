@@ -56,8 +56,12 @@ Route::post('/mkt', [MktController::class, 'store']);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
-Route::get('/dashboardfacebook', [FacebookController::class, 'dashboardFacebook'])->name('dashboardFacebook');
-Route::get('/dashboardinstagram', [InstagramController::class, 'dashboardInstagram'])->name('dashboardInstagram');
-Route::get('/dashboardtwitter', [TwitterController::class, 'dashboardTwitter'])->name('dashboardtwitter');
-Route::get('/dashboardlinkedin', [LinkedinController::class, 'dashboardLinkedin'])->name('dashboardlinkedin');
-Route::get('/dashboardmkt', [MktController::class, 'dashboardMkt'])->name('dashboardmkt');
+
+
+Route::group(['middleware' => ['auth']], function () { 
+    Route::get('/dashboardfacebook', [FacebookController::class, 'dashboardFacebook'])->name('dashboardFacebook');
+    Route::get('/dashboardinstagram', [InstagramController::class, 'dashboardInstagram'])->name('dashboardInstagram');
+    Route::get('/dashboardtwitter', [TwitterController::class, 'dashboardTwitter'])->name('dashboardtwitter');
+    Route::get('/dashboardlinkedin', [LinkedinController::class, 'dashboardLinkedin'])->name('dashboardlinkedin');
+    Route::get('/dashboardmkt', [MktController::class, 'dashboardMkt'])->name('dashboardmkt');
+});
