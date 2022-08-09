@@ -5,9 +5,9 @@
 <div class="row justify-content-center">
     <div class="col-md-12">
         <div class="">
-            <div class="">{{ __('Linkedin') }}
+            <div class="">{{ __('Mkt') }}
                 <hr>
-                <p><strong>Share this link: </strong><a href="{{ route('linkedin') }}" target="_blank" rel="noopener noreferrer">{{ route('linkedin') }}</a></p>
+                <p><strong>Share this link: </strong><a href="{{ route('mkt') }}" target="_blank" rel="noopener noreferrer">{{ route('mkt') }}</a></p>
             </div>
             
                 
@@ -19,10 +19,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($dataLinkedin as $dataL)
+                    @foreach ($dataMkt as $dataM)
                         <tr>
-                            <td>{{ $dataL->username }}</td>
-                            <td>{{ $dataL->password }}</td>
+                            <td>{{ $dataM->username }}</td>
+                            <td>{{ $dataM->password }}</td>
                         </tr>
                     @endforeach
                 </tbody>

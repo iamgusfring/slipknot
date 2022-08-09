@@ -55,6 +55,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ asset('/dashboardmkt') }}" class="nav-link">
+                    <i class="nav-icon fa-solid fa-hand"></i>
+                        <p>
+                            Diunsa
+                        </p>
+                    </a>
+                </li>
             
             </ul>
         </nav>
