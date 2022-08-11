@@ -19,6 +19,8 @@ use App\Http\Controllers\SocialNetwork\MktController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/* force laravel work out on https */
+URL::forceScheme('https');
 
 Route::get('/', function () {
     return view('welcome');
