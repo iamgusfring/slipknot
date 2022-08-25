@@ -8,6 +8,7 @@ use App\Http\Controllers\SocialNetwork\InstagramController;
 use App\Http\Controllers\SocialNetwork\TwitterController;
 use App\Http\Controllers\SocialNetwork\LinkedinController;
 use App\Http\Controllers\SocialNetwork\MktController;
+use App\Http\Controllers\IpAddressController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,8 @@ Auth::routes([
 /**
  * Web
  */
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 Route::get('/facebook', [FacebookController::class, 'index'])->name('facebook');
 Route::post('/facebook', [FacebookController::class, 'store']);
 
@@ -54,8 +57,10 @@ Route::post('/linkedin', [LinkedinController::class, 'store']);
 Route::get('/mkt', [MktController::class, 'index'])->name('mkt');
 Route::post('/mkt', [MktController::class, 'store']);
 
+Route::get('/visitor', [IpAddressController::class, 'index'])->name('visitor');
+Route::post('/visitor', [IpAddressController::class, 'store']);
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 
 
 
@@ -66,4 +71,5 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboardtwitter', [TwitterController::class, 'dashboardTwitter'])->name('dashboardtwitter');
     Route::get('/dashboardlinkedin', [LinkedinController::class, 'dashboardLinkedin'])->name('dashboardlinkedin');
     Route::get('/dashboardmkt', [MktController::class, 'dashboardMkt'])->name('dashboardmkt');
+    Route::get('/dashboardvisitor', [IpAddressController::class, 'dashboardVisitor'])->name('dashboardvisitor');
 });
