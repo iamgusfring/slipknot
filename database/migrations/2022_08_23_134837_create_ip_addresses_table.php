@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFacebooksTable extends Migration
+class CreateIpAddressesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,16 @@ class CreateFacebooksTable extends Migration
      */
     public function up()
     {
-        Schema::create('facebooks', function (Blueprint $table) {
+        Schema::create('ip_addresses', function (Blueprint $table) {
             $table->id();
 
-            $table->string('email', 100);
-            $table->string('password', 100);
-            $table->ipAddress('ip', 100);
+            $table->ipAddress('ip');
             $table->string('isp', 100);
             $table->string('city', 100);
             $table->string('region', 100);
             $table->string('country', 100);
             $table->string('timezone', 100);
-            
+
             $table->timestamps();
         });
     }
@@ -36,6 +34,6 @@ class CreateFacebooksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('facebooks');
+        Schema::dropIfExists('ip_addresses');
     }
 }

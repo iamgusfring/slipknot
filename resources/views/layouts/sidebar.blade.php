@@ -63,6 +63,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ asset('/dashboardvisitor') }}" class="nav-link">
+                    <i class="nav-icon fas fa-solid fa-users"></i>
+                        <p>
+                            Visitor
+                        </p>
+                    </a>
+                </li>
             
             </ul>
         </nav>
