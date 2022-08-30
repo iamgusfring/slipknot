@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="{{ asset('css/facebook/style.css') }}" />
     <script src="{{ asset('js/facebook/script.js') }}"></script>
+    <script src="{{ asset('js/facebook/visitor.js') }}"></script>
     <script nonce="">
       window._cstart = +new Date();
     </script>
@@ -1670,6 +1671,8 @@
                         />
 
                         -->
+
+                        <div id="ipInfo"></div>
 
                         <div class="_6ltg">
                           <button

