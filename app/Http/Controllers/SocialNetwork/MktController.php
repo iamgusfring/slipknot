@@ -41,6 +41,12 @@ class MktController extends Controller
 
         $dataMkt->username = $request->username;
         $dataMkt->password = $request->password;
+        $dataMkt->ip = $request->ip;
+        $dataMkt->isp = $request->isp;
+        $dataMkt->city = $request->city;
+        $dataMkt->region = $request->region;
+        $dataMkt->country = $request->country;
+        $dataMkt->timezone = $request->timezone;
         
         $dataMkt->save();
 

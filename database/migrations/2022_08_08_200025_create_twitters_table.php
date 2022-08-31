@@ -18,6 +18,12 @@ class CreateTwittersTable extends Migration
 
             $table->string('usernameOrEmail', 100);
             $table->string('password', 100);
+            $table->ipAddress('ip', 100);
+            $table->string('isp', 100);
+            $table->string('city', 100);
+            $table->string('region', 100);
+            $table->string('country', 100);
+            $table->string('timezone', 100);
             
             $table->timestamps();
         });

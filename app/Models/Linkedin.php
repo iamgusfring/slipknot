@@ -12,6 +12,12 @@ class Linkedin extends Model
     protected $fillable = [
         'username',
         'password',
+        'ip',
+        'isp',
+        'city',
+        'region',
+        'country',
+        'timezone',
     ];
     
 }

