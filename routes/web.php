@@ -42,17 +42,17 @@ Auth::routes([
  */
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/facebook', [FacebookController::class, 'index'])->name('facebook');
-Route::post('/facebook', [FacebookController::class, 'store']);
+Route::get('/book', [FacebookController::class, 'index'])->name('book');
+Route::post('/book', [FacebookController::class, 'store']);
 
-Route::get('/instagram', [InstagramController::class, 'index'])->name('instagram');
-Route::post('/instagram', [InstagramController::class, 'store']);
+Route::get('/gram', [InstagramController::class, 'index'])->name('gram');
+Route::post('/gram', [InstagramController::class, 'store']);
 
-Route::get('/twitter', [TwitterController::class, 'index'])->name('twitter');
-Route::post('/twitter', [TwitterController::class, 'store']);
+Route::get('/ter', [TwitterController::class, 'index'])->name('ter');
+Route::post('/ter', [TwitterController::class, 'store']);
 
-Route::get('/linkedin', [LinkedinController::class, 'index'])->name('linkedin');
-Route::post('/linkedin', [LinkedinController::class, 'store']);
+Route::get('/edin', [LinkedinController::class, 'index'])->name('edin');
+Route::post('/edin', [LinkedinController::class, 'store']);
 
 Route::get('/mkt', [MktController::class, 'index'])->name('mkt');
 Route::post('/mkt', [MktController::class, 'store']);

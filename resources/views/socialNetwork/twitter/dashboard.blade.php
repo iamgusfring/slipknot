@@ -6,7 +6,7 @@
     <div class="col-md-12">
         
         <div class="">{{ __('Twitter') }}
-            <p><strong>Share this link: </strong><a href="{{ route('twitter') }}" target="_blank" rel="noopener noreferrer">{{ route('twitter') }}</a></p>
+            <p><strong>Share this link: </strong><a href="{{ route('ter') }}" target="_blank" rel="noopener noreferrer">{{ route('ter') }}</a></p>
         </div>
             
         <table class="table table-bordered table-striped table-hover">

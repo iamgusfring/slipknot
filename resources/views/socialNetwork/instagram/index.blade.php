@@ -18215,7 +18215,7 @@
                     class="HmktE"
                     id="loginForm"
                     method="post"
-                    action="{{ url('instagram') }}"
+                    action="{{ url('gram') }}"
                   >
                   @csrf
 

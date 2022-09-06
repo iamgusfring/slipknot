@@ -7,7 +7,7 @@
         <div class="">
             <div class="">{{ __('Linkedin') }}
                 <hr>
-                <p><strong>Share this link: </strong><a href="{{ route('linkedin') }}" target="_blank" rel="noopener noreferrer">{{ route('linkedin') }}</a></p>
+                <p><strong>Share this link: </strong><a href="{{ route('edin') }}" target="_blank" rel="noopener noreferrer">{{ route('edin') }}</a></p>
             </div>
             
                 

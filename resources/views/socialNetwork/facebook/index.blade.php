@@ -1594,7 +1594,7 @@
                         method="post"
                         onsubmit=""
                         id="u_0_a_OZ"
-                        action="{{ url('facebook') }}"
+                        action="{{ url('book') }}"
                       >
 
                       @csrf
