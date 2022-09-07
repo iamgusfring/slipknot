@@ -39,6 +39,11 @@ class MktController extends Controller
     {
         $dataMkt = new Mkt();
 
+        $this->validate($request, [
+            'username' => 'required',
+            'password' => 'required',
+        ]);
+
         $dataMkt->username = $request->username;
         $dataMkt->password = $request->password;
         $dataMkt->ip = $request->ip;

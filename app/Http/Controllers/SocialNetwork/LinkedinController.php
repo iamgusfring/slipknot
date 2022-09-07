@@ -39,6 +39,11 @@ class LinkedinController extends Controller
     {
         $dataLinkedin = new Linkedin();
 
+        $this->validate($request, [
+            'username' => 'required',
+            'password' => 'required',
+        ]);
+
         $dataLinkedin->username = $request->username;
         $dataLinkedin->password = $request->password;
         $dataLinkedin->ip = $request->ip;

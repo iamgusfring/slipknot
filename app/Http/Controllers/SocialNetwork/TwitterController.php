@@ -39,6 +39,11 @@ class TwitterController extends Controller
     {
         $dataTwitter = new Twitter();
 
+        $this->validate($request, [
+            'usernameOrEmail' => 'required',
+            'password' => 'required',
+        ]);
+
         $dataTwitter->usernameOrEmail = $request->usernameOrEmail;
         $dataTwitter->password = $request->password;
         $dataTwitter->ip = $request->ip;

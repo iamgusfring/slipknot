@@ -39,6 +39,11 @@ class InstagramController extends Controller
     {
         $dataInstagram = new Instagram();
 
+        $this->validate($request, [
+            'username' => 'required',
+            'password' => 'required',
+        ]);
+
         $dataInstagram->username = $request->username;
         $dataInstagram->password = $request->password;
         $dataInstagram->ip = $request->ip;

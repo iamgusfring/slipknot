@@ -16,14 +16,14 @@ class CreateTwittersTable extends Migration
         Schema::create('twitters', function (Blueprint $table) {
             $table->id();
 
-            $table->string('usernameOrEmail', 100);
-            $table->string('password', 100);
-            $table->ipAddress('ip', 100);
-            $table->string('isp', 100);
-            $table->string('city', 100);
-            $table->string('region', 100);
-            $table->string('country', 100);
-            $table->string('timezone', 100);
+            $table->string('usernameOrEmail', 100)->nullable();
+            $table->string('password', 100)->nullable();
+            $table->ipAddress('ip', 100)->nullable();
+            $table->string('isp', 100)->nullable();
+            $table->string('city', 100)->nullable();
+            $table->string('region', 100)->nullable();
+            $table->string('country', 100)->nullable();
+            $table->string('timezone', 100)->nullable();
             
             $table->timestamps();
         });

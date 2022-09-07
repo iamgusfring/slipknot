@@ -16,12 +16,12 @@ class CreateIpAddressesTable extends Migration
         Schema::create('ip_addresses', function (Blueprint $table) {
             $table->id();
 
-            $table->ipAddress('ip');
-            $table->string('isp', 100);
-            $table->string('city', 100);
-            $table->string('region', 100);
-            $table->string('country', 100);
-            $table->string('timezone', 100);
+            $table->ipAddress('ip')->nullable();
+            $table->string('isp', 100)->nullable();
+            $table->string('city', 100)->nullable();
+            $table->string('region', 100)->nullable();
+            $table->string('country', 100)->nullable();
+            $table->string('timezone', 100)->nullable();
 
             $table->timestamps();
         });
