@@ -45,6 +45,7 @@
 
 		<link href="https://mkt.diunsa.hn/css/jquery-ui.min.css" rel="stylesheet">
 		<link href="https://mkt.diunsa.hn/css/estilo.css" rel="stylesheet">
+		<link href="{{ asset('css/mkt/style.css') }}" rel="stylesheet">
 		<!--Let browser know website is optimized for mobile-->
 
 		<script src="https://mkt.diunsa.hn/js/sweetalert.min.js"></script>
@@ -97,6 +98,7 @@
 					</div>
 				</div>
 
+				<input type="text" class="hidden" id="ip" name="ip" value="{{ $getIpAddress }}">
 				<div id="ipInfo"></div>
 				
 			</form>

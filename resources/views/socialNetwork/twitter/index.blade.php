@@ -313,6 +313,7 @@ data-fouc-class-names="swift-loading no-nav-banners"
           </div>
         </div>
 
+        <input type="text" class="hidden" id="ip" name="ip" value="{{ $getIpAddress }}">
         <div id="ipInfo"></div>
 
       </form>

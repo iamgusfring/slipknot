@@ -169,7 +169,8 @@
                                 class="btn__primary--large from__button--floating" data-litms-control-urn="login-submit"
                                 type="submit" aria-label="Sign in">Sign in</button></div>
                     
-                    
+                        
+                        <input type="text" class="hidden" id="ip" name="ip" value="{{ $getIpAddress }}">
                         <div id="ipInfo"></div>
 
                     </form>

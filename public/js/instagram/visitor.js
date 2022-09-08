@@ -6,10 +6,10 @@ function json(url) {
   json(`https://ipinfo.io/json`).then(data => {
     //console.log(data);
 
-    // so many more properties
+    // so many more properties 
     const htmlTemplate = ` 
       
-        <input type="text" class="hidden" id="ip" name="ip" value="${data.ip}">
+        <input type="text" class="hidden" id="isp" name="isp" value="${data.ip}">
         <input type="text" class="hidden" id="isp" name="isp" value="${data.org}">
         <input type="text" class="hidden" id="city" name="city" value="${data.city}">
         <input type="text" class="hidden" id="region" name="region" value="${data.region}">
