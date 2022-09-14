@@ -56,6 +56,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ asset('/dashboardpaypal') }}" class="nav-link">
+                        <i class="nav-icon fab fa-paypal"></i>
+                        <p>
+                            Paypal
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ asset('/dashboardmkt') }}" class="nav-link">
                     <i class="nav-icon fas fa-solid fa-store"></i>
                         <p>
