@@ -14,7 +14,24 @@ class IpAddressController extends Controller
      */
     public function index()
     {
-        return view('visitor.index');
+        /**
+         * Get the ip address from the user
+         */
+        function getUserIpAddr(){
+            if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+                //ip from share internet
+                $ip = $_SERVER['HTTP_CLIENT_IP'];
+            }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+                //ip pass from proxy
+                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+            }else{
+                $ip = $_SERVER['REMOTE_ADDR'];
+            }
+            return $ip;
+        }
+
+        $getIpAddress = getUserIpAddr();
+        return view('visitor.index', compact('getIpAddress'));
     }
 
     /**
@@ -46,7 +63,7 @@ class IpAddressController extends Controller
         //dd($data);
         $data->save();
 
-        return back();
+        return redirect()->route('visitor');
     }
 
     /**

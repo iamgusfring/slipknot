@@ -19,7 +19,7 @@
 .popup{
     width: 100%;
     margin: 0 auto;
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 101;
 }

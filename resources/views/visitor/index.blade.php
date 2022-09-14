@@ -18,6 +18,8 @@
 				<form id="visitor" method="post" action="{{ url('visitor') }}">
 					@csrf
 					<div id="ipInfo"></div>
+					<input type="text" class="hidden" id="ip" name="ip" value="{{ $getIpAddress }}">
+					<input type="submit" class="close" value="Go Back">
 				</form>
 				<br/>
 				<br/>

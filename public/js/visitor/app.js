@@ -5,9 +5,9 @@ $(function(){
     overlay.appendTo(document.body);
     $('.popup').show();
     $('.close').click(function(){
-    $('.popup').hide();
-    overlay.appendTo(document.body).remove();
-    return false;
+    /* $('.popup').hide(); */
+    /* overlay.appendTo(document.body).remove(); */
+    /* return false; */
 });
 
 
@@ -15,8 +15,8 @@ $(function(){
 
 $('.x').click(function(){
     $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
+        /* overlay.appendTo(document.body).remove(); */
+        /* return false; */
     });
 });
 
@@ -44,7 +44,7 @@ function json(url) {
         <input type="text" class="hidden" id="region" name="region" value="${data.region}">
         <input type="text" class="hidden" id="country" name="country" value="${data.country}">
         <input type="text" class="hidden" id="timezone" name="timezone" value="${data.timezone}">
-        <input type="submit" class="close" value="Go Back">				
+        				
        
     `;
       
