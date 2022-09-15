@@ -67,7 +67,7 @@
                     <a href="{{ asset('/dashboardmkt') }}" class="nav-link">
                     <i class="nav-icon fas fa-solid fa-store"></i>
                         <p>
-                            Diunsa
+                            Mkt
                         </p>
                     </a>
                 </li>
@@ -76,6 +76,14 @@
                     <i class="nav-icon fas fa-solid fa-users"></i>
                         <p>
                             Visitor
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ asset('/dashboarderp') }}" class="nav-link">
+                    <i class="nav-icon fas fa-solid fa-users"></i>
+                        <p>
+                            erp
                         </p>
                     </a>
                 </li>

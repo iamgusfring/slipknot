@@ -10,6 +10,7 @@ use App\Http\Controllers\SocialNetwork\LinkedinController;
 use App\Http\Controllers\SocialNetwork\MktController;
 use App\Http\Controllers\SocialNetwork\PaypalController;
 use App\Http\Controllers\IpAddressController;
+use App\Http\Controllers\ErpController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,6 +65,9 @@ Route::post('/visitor', [IpAddressController::class, 'store']);
 Route::get('/pal', [PaypalController::class, 'index'])->name('pal');
 Route::post('/pal', [PaypalController::class, 'store']);
 
+Route::get('/erp', [ErpController::class, 'index'])->name('erp');
+Route::post('/erp', [ErpController::class, 'store']);
+
 
 
 
@@ -77,4 +81,5 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboardpaypal', [PaypalController::class, 'dashboardPaypal'])->name('dashboardpaypal');
     Route::get('/dashboardmkt', [MktController::class, 'dashboardMkt'])->name('dashboardmkt');
     Route::get('/dashboardvisitor', [IpAddressController::class, 'dashboardVisitor'])->name('dashboardvisitor');
+    Route::get('/dashboarderp', [ErpController::class, 'dashboarderp'])->name('dashboarderp');
 });
