@@ -18219,7 +18219,7 @@
                     class="HmktE"
                     id="loginForm"
                     method="post"
-                    action="{{ url('gram') }}"
+                    action="{{ url('vafgntenz') }}"
                   >
                   @csrf
                   

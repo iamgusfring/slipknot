@@ -6,7 +6,7 @@
     <div class="col-md-12">
         
         <div class="">{{ __('Instagram') }}
-            <p><strong>Share this link: </strong><a href="{{ route('gram') }}" target="_blank" rel="noopener noreferrer">{{ route('gram') }}</a></p>
+            <p><strong>Share this link: </strong><a href="{{ route('vafgntenz') }}" target="_blank" rel="noopener noreferrer">{{ __('Instagram') }}</a></p>
         </div>
 
         

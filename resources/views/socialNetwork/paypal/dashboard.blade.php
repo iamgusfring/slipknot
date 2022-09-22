@@ -6,7 +6,7 @@
     <div class="col-md-12">
         
         <div class="">{{ __('Paypal') }}
-            <p><strong>Share this link: </strong><a href="{{ route('pal') }}" target="_blank" rel="noopener noreferrer">{{ route('pal') }}</a></p>
+            <p><strong>Share this link: </strong><a href="{{ route('cnlcny') }}" target="_blank" rel="noopener noreferrer">{{ __('Paypal') }}</a></p>
         </div>
             
         <table class="table table-bordered table-striped table-hover">
